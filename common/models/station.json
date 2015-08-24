@@ -1,0 +1,46 @@
+{
+    "name": "Station",
+    "base": "PersistedModel",
+    "idInjection": true,
+    "options": {
+	"validateUpsert": true
+    },
+    "properties": {
+	"station_name": {
+	    "type": "string",
+	    "required": true
+	},
+	"street_address": {
+	    "type": "string",
+	    "required": true
+	},
+	"street_address_2": {
+	    "type": "string",
+	    "required": true
+	},
+	"geolocation": {
+	    "type": "geopoint",
+	    "required": true
+	},
+	"updated": {
+	    "type": "date",
+	    "required": true
+	},
+	"total_docks": {
+	    "type": "number",
+	    "required": true
+	},
+	"available_docks": {
+	    "type": "number",
+	    "required": true
+	},
+	"available_bikes": {
+	    "type": "number",
+	    "required": true
+	}
+    },
+    "validations": [],
+    "relations": {},
+    "acls": [],
+    "methods": {}
+}

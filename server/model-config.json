@@ -36,5 +36,9 @@
   "bykr": {
     "dataSource": "db",
     "public": true
+  },
+  "Station": {
+    "dataSource": "db",
+    "public": true
   }
 }
