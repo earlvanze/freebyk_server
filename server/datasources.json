@@ -1,6 +1,12 @@
 {
-  "db": {
-    "name": "db",
-    "connector": "memory"
-  }
+    "db": {
+	"name": "db",
+	"connector": "memory"
+    },
+    "sqlite": {
+	"name": "sqlite",
+	"connector": "sqlite",
+	"file_name": "db.sqlite3",
+	"debug": true
+    }
 }

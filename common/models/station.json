@@ -1,46 +1,45 @@
 {
-    "name": "Station",
-    "base": "PersistedModel",
-    "idInjection": true,
-    "options": {
-	"validateUpsert": true
+  "name": "Station",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "stationName": {
+      "type": "string",
+      "required": true
     },
-    "properties": {
-	"station_name": {
-	    "type": "string",
-	    "required": true
-	},
-	"street_address": {
-	    "type": "string",
-	    "required": true
-	},
-	"street_address_2": {
-	    "type": "string",
-	    "required": true
-	},
-	"geolocation": {
-	    "type": "geopoint",
-	    "required": true
-	},
-	"updated": {
-	    "type": "date",
-	    "required": true
-	},
-	"total_docks": {
-	    "type": "number",
-	    "required": true
-	},
-	"available_docks": {
-	    "type": "number",
-	    "required": true
-	},
-	"available_bikes": {
-	    "type": "number",
-	    "required": true
-	}
+    "streetAddress": {
+      "type": "string",
+      "required": true
     },
-    "validations": [],
-    "relations": {},
-    "acls": [],
-    "methods": {}
+    "streetAddress2": {
+      "type": "string"
+    },
+    "geolocation": {
+      "type": "geopoint",
+      "required": true
+    },
+    "updated": {
+      "type": "date",
+      "required": true
+    },
+    "totalDocks": {
+      "type": "number",
+      "required": true
+    },
+    "availableDocks": {
+      "type": "number",
+      "required": true
+    },
+    "availableBikes": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
 }
