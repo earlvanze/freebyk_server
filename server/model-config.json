@@ -34,7 +34,7 @@
     "public": false
   },
   "bykr": {
-    "dataSource": "db",
+    "dataSource": "sqlite",
     "public": true
   },
   "Station": {

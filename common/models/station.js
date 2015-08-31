@@ -1,6 +1,9 @@
 module.exports = function(Station) {
-    var selectionAlgorithm = function(location, stations){
-	return stations;
+    var nearbySelectionAlgorithm = function(location, stations){
+	var filter_function = function(station){
+	    return (station.availableBikes / station.totalDocks) > 0.75;
+	}
+	return stations.filter(filter_function);
     };
 
     
@@ -9,14 +12,14 @@ module.exports = function(Station) {
 	    where: {
 		geolocation: {
 		    near: location,
-		    maxDistance: distance}
+		    maxDistance: distance},
 	    }
 	},
 		     function(error, stations){
 			 if(error){
 			     return error;
 			 }
-			 callback(null, selectionAlgorithm(location, stations));
+			 callback(null, nearbySelectionAlgorithm(location, stations));
 		     });
     };
     Station.remoteMethod(

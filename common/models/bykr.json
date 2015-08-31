@@ -5,7 +5,14 @@
   "options": {
     "validateUpsert": true
   },
-  "properties": {},
+  "properties": {
+      "first_name": {
+	  "type": "string"
+      },
+      "last_name": {
+	  "type": "string"
+      }
+  },
   "validations": [],
   "relations": {},
   "acls": [],
