@@ -6,15 +6,21 @@
     "validateUpsert": true
   },
   "properties": {
-      "first_name": {
-	  "type": "string"
-      },
-      "last_name": {
-	  "type": "string"
-      }
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "agreements": {
+      "type": "hasMany",
+      "model": "Agreement",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }

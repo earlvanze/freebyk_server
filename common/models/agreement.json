@@ -1,0 +1,35 @@
+{
+  "name": "Agreement",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "pickup_station": {
+      "type": "number",
+      "required": true
+    },
+    "dropoff_station": {
+      "type": "number",
+      "required": true
+    },
+    "datetime": {
+      "type": "date",
+      "required": true
+    },
+    "delivered": {
+      "type": "boolean"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "bykr": {
+      "type": "belongsTo",
+      "model": "bykr",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

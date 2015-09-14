@@ -40,5 +40,9 @@
   "Station": {
     "dataSource": "db",
     "public": true
+  },
+  "Agreement": {
+    "dataSource": "sqlite",
+    "public": true
   }
 }
