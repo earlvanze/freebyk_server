@@ -7,8 +7,7 @@
   },
   "properties": {
     "pickup_station": {
-      "type": "number",
-      "required": true
+      "type": "number"
     },
     "dropoff_station": {
       "type": "number",
@@ -19,14 +18,15 @@
       "required": true
     },
     "delivered": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     }
   },
   "validations": [],
   "relations": {
-    "bykr": {
+    "user": {
       "type": "belongsTo",
-      "model": "bykr",
+      "model": "user",
       "foreignKey": ""
     }
   },

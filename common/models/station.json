@@ -7,35 +7,28 @@
   },
   "properties": {
     "stationName": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "streetAddress": {
-      "type": "string",
-      "required": true
+      "type": "string"
     },
     "streetAddress2": {
       "type": "string"
     },
     "geolocation": {
-      "type": "geopoint",
-      "required": true
+      "type": "geopoint"
     },
     "updated": {
-      "type": "date",
-      "required": true
+      "type": "date"
     },
     "totalDocks": {
-      "type": "number",
-      "required": true
+      "type": "number"
     },
     "availableDocks": {
-      "type": "number",
-      "required": true
+      "type": "number"
     },
     "availableBikes": {
-      "type": "number",
-      "required": true
+      "type": "number"
     }
   },
   "validations": [],

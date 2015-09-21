@@ -44,7 +44,7 @@ module.exports = function(Station) {
 	    where: {
 		geolocation: {
 		    near: location,
-		    maxDistance: distance},
+		    /*maxDistance: distance*/},
 	    }
 	},
 		     function(error, stations){

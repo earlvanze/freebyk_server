@@ -2,26 +2,6 @@
   "restApiRoot": "/api",
   "host": "localhost",
   "port": 6001,
-  "remoting": {
-    "context": {
-      "enableHttpContext": false
-    },
-    "rest": {
-      "normalizeHttpPath": false,
-      "xml": false
-    },
-    "json": {
-      "strict": false,
-      "limit": "100kb"
-    },
-    "urlencoded": {
-      "extended": true,
-      "limit": "100kb"
-    },
-    "cors": false,
-    "errorHandler": {
-      "disableStackTrace": false
-    }
-  },
-  "legacyExplorer": false
+  "url": "http://localhost:6001/",
+  "cookieSecret": "246bace2-38cb-4138-85d9-0ae8160b07c8"
 }

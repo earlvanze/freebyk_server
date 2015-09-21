@@ -1,5 +1,4 @@
 module.exports = function(Agreement) {
-
     Agreement.ftd = function(since, grace_minutes, callback){
 	var grace = new Date();
 	grace.setMinutes(grace.getMinutes() - grace_minutes);
@@ -27,4 +26,5 @@ module.exports = function(Agreement) {
 		      {arg: "grace_minutes", type: "number"}],
 	    returns: {arg: "ftds", type: "array"}
 	});
+
 };
